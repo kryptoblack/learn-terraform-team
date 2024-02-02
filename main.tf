@@ -1,3 +1,9 @@
+
+resource "aws_instance" "default" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+}
+
 resource "aws_db_instance" "default" {
   allocated_storage    = 5
   db_name              = "mydb"
